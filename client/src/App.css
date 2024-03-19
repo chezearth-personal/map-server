@@ -43,7 +43,8 @@ body {
 
 img {
   width: 96%;
-  height: auto;
+  height: 96%;
+  object-fit:contain;
   margin: 0 5px 0 px;
 }
 
