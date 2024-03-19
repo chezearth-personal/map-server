@@ -1,20 +1,48 @@
 // import logo from './logo.svg';
 import React, { useState } from 'react';
 import './App.css';
+import mapDescriptions from './resources/mapDescriptions.json';
 import livelihood_zones_a3 from './resources/livelihood_zones_v2_a3.png';
 import rs_vci from './resources/rs_vci.png';
 import rs_vci_hazard from './resources/rs_vci_hazard.png';
 import hazard_affected from './resources/hazard_affected.png';
-import hazard_agriregions from './resources/hazard_agricregions.png';
+import hazard_agricregions from './resources/hazard_agricregions.png';
 import hazard_livezones from './resources/hazard_livezones.png';
 import hazard_sas from './resources/hazard_sas.png';
 
 
 function App() {
-  const [map, setMap] = useState('');
+  console.log(mapDescriptions);
+  const [map, setMap] = useState({
+    image: null,
+    value: mapDescriptions.maps[0].value,
+    title: mapDescriptions.maps[0].title,
+    description: mapDescriptions.maps[0].description
+  });
   const handleSelect = (e) => {
     // console.log(e.value);
-    setMap(e.value);
+    const mapObject = (test) => {
+      switch(test) {
+        case 'livelihood_zones_a3':
+          return livelihood_zones_a3;
+        case 'rs_vci':
+          return rs_vci;
+        case 'rs_vci_hazard':
+          return rs_vci_hazard;
+        case 'hazard_affected':
+          return hazard_affected;
+        case 'hazard_agricregions':
+          return hazard_agricregions;
+        case 'hazard_livezones':
+          return hazard_livezones;
+        case 'hazard_sas':
+          return hazard_sas;
+        default:
+          return null;
+      }
+    }
+    const selectedMap = mapDescriptions.maps.find(map => map.value === e.value);
+    setMap(Object.assign({ ...selectedMap }, {image: mapObject(selectedMap.value)}));
   };
   return (
     <div className='App'>
@@ -23,53 +51,28 @@ function App() {
         <div className='selector'>
           <label htmlFor='mapToView'>Select the map you wish to view</label>
           <select id='mapToView' name='mapToView' onChange={e => handleSelect(e.target)}>
-            <option value=''>Select Map</option>
-            <option value='livelihood_zones_a3'>Livelihood Zones (A3 size image)</option>
-            <option value='rs_vci'>Remote Sensing Vegetation Condition Index</option>
-            <option value='rs_vci_hazard'>Remote Sensing Vegetation Condition Index with Hazard Defined</option>
-            <option value='hazard_affected'>Hazard Affected Areas</option>
-            <option value='hazard_agriregions'>Hazard and Agricultural Regions</option>
-            <option value='hazard_livezones'>Hazard and Livelihood zones</option>
-            <option value='hazard_sas'>Hazard and Enumeartion Small Areas</option>
+            <option value={mapDescriptions.maps[0].value}>{mapDescriptions.maps[0].title}</option>
+            <option value={mapDescriptions.maps[1].value}>{mapDescriptions.maps[1].title}</option>
+            <option value={mapDescriptions.maps[2].value}>{mapDescriptions.maps[2].title}</option>
+            <option value={mapDescriptions.maps[3].value}>{mapDescriptions.maps[3].title}</option>
+            <option value={mapDescriptions.maps[4].value}>{mapDescriptions.maps[4].title}</option>
+            <option value={mapDescriptions.maps[5].value}>{mapDescriptions.maps[5].title}</option>
+            <option value={mapDescriptions.maps[6].value}>{mapDescriptions.maps[6].title}</option>
+            <option value={mapDescriptions.maps[7].value}>{mapDescriptions.maps[7].title}</option>
           </select>
         </div>
-        <div className='maps'>
-          {
-            map === 'livelihood_zones_a3'
-              ? <img src={livelihood_zones_a3} className='hazard_maps' alt='Livelihood Zones in South Africa' />
-              : ''
-          }
-          {
-            map === 'rs_vci'
-              ? <img src={rs_vci} className='hazard_maps' alt='Remote Sensing Vegetation Condition Index' />
-              : ''
-          }
-          {
-            map === 'rs_vci_hazard'
-              ? <img src={rs_vci_hazard} className='hazard_maps' alt='Remote Sensing Vegetation Condition Index with hazard defined' />
-              : ''
-          }
-          {
-            map === 'hazard_affected'
-              ? <img src={hazard_affected} className='hazard_maps' alt='Hazard definition in South Africa' />
-              : ''
-          }
-          {
-            map === 'hazard_agriregions'
-              ? <img src={hazard_agriregions} className="hazard_maps" alt="Hazard, superimposed on agricultural regions in South Africa" />
-              : ''
-          }
-          {
-            map === 'hazard_livezones'
-              ? <img src={hazard_livezones} className="hazard_maps" alt="Hazard, superimposed on livelihood zones in South Africa" />
-              : ''
-          }
-          {
-            map === 'hazard_sas'
-              ? <img src={hazard_sas} className="hazard_maps" alt="Hazard, superimposed on enumeration small areas in South Africa"/>
-              : ''
-          }
-        </div>
+        { map.value !== 'default'
+          ? <div>
+              <div className='map'>
+                <img src={map.image} className='hazard_maps' alt={map.title} />
+              </div>
+              <div className='mapDescriptions'>
+                <h4>{mapDescriptions.heading}</h4>
+                <p>{map.description}</p>
+              </div>
+            </div>
+          : null
+        }
       </main>
     </div>
   );

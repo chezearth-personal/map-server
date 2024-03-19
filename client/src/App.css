@@ -48,7 +48,7 @@ main {
 
 img {
   width: 96%;
-  height: calc((100vh - 136px) * 0.98);
+  height: calc((100vh - 295px) * 0.98);
   object-fit:contain;
   margin: 0 5px 0 px;
 }

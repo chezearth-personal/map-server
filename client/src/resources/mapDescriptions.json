@@ -1,0 +1,46 @@
+{
+  "heading": "Map description",
+  "maps": [
+    {
+      "value": "default",
+      "title": "< Select Map >",
+      "description": ""
+    },
+    {
+      "value": "livelihood_zones_a3",
+      "title": "Livelihood Zones (A3 size image) in South Africa",
+      "description": "Livelihood zones are areas where people have similar patterns of making a living. In each zone, people share similar options for making a living, such as farming, fishing, or herding. The zones are based on the type of land, the climate, and the plants and animals that live there. This map shows the livelihood zones in the country. The zones are based on the type of land, the climate, and the plants and animals that live there."
+
+    },
+    {
+      "value": "rs_vci",
+      "title": "Remote Sensing Vegetation Condition Index",
+      "description": "The Vegetation Condition Index (VCI) is a measure of how healthy the plants are. It shows how much the plants are growing compared with the average for that time of year. The VCI is based on satellite images that measure the amount of green in the landscape. This map shows the VCI for the whole country."
+    },
+    {
+      "value": "rs_vci_hazard",
+      "title": "Remote Sensing Vegetation Condition Index with Hazard Areas Defined",
+      "description": "The pixels making up the Vegentation Condition Index raster map have been aggregated and combined to form a vector Harard Area Definition map. The hazard area is defined as the area where the VCI is below 35%."
+    },
+    {
+      "value": "hazard_affected",
+      "title": "Hazard Affected Areas",
+      "description": "The hazard affected areas are the areas where the VCI is below 35%. This map shows the aggregated hazard affected areas across the country."
+    },
+    {
+      "value": "hazard_agricregions",
+      "title": "Harzard Area Overlaid onto Agricultural Zones",
+      "description": "The agricultural Zones are broadly-defined areas for agricultural practice. This map shows the hazard affected areas in relation to the agricultural zones."
+    },
+    {
+      "value": "hazard_livezones",
+      "title": "Hazard Area Overlaid onto Livelihood zones",
+      "description": "The livelihood zones are areas where people have similar patterns of making a living. In each zone, people share similar options for making a living, such as farming, fishing, or herding. The zones are based on the type of land, the climate, and the plants and animals that live there. This map shows the hazard affected areas in relation to the livelihood zones."
+    },
+    {
+      "value": "hazard_sas",
+      "title": "Hazard and Enumeartion Small Areas",
+      "description": "The enumeration small areas are the smallest geographic areas for which census data are available. This map shows the hazard affected areas in relation to the enumeration small areas."
+    }
+  ]
+}
