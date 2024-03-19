@@ -1,13 +1,14 @@
 // import logo from './logo.svg';
 import React, { useState } from 'react';
 import './App.css';
-import livelihood_zones from './resources/livelihood_zones_v2_a3.png';
+import livelihood_zones_a3 from './resources/livelihood_zones_v2_a3.png';
 import rs_vci from './resources/rs_vci.png';
 import rs_vci_hazard from './resources/rs_vci_hazard.png';
 import hazard_affected from './resources/hazard_affected.png';
 import hazard_agriregions from './resources/hazard_agricregions.png';
 import hazard_livezones from './resources/hazard_livezones.png';
 import hazard_sas from './resources/hazard_sas.png';
+
 
 function App() {
   const [map, setMap] = useState('');
@@ -23,7 +24,7 @@ function App() {
           <label htmlFor='mapToView'>Select the map you wish to view</label>
           <select id='mapToView' name='mapToView' onChange={e => handleSelect(e.target)}>
             <option value=''>Select Map</option>
-            <option value='livelihood_zones'>Livelihood Zones</option>
+            <option value='livelihood_zones_a3'>Livelihood Zones (A3 size image)</option>
             <option value='rs_vci'>Remote Sensing Vegetation Condition Index</option>
             <option value='rs_vci_hazard'>Remote Sensing Vegetation Condition Index with Hazard Defined</option>
             <option value='hazard_affected'>Hazard Affected Areas</option>
@@ -34,8 +35,8 @@ function App() {
         </div>
         <div className='maps'>
           {
-            map === 'livelihood_zones'
-              ? <img src={livelihood_zones} className='hazard_maps' alt='Livelihood Zones in South Africa' />
+            map === 'livelihood_zones_a3'
+              ? <img src={livelihood_zones_a3} className='hazard_maps' alt='Livelihood Zones in South Africa' />
               : ''
           }
           {
