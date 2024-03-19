@@ -13,7 +13,7 @@ import hazard_sas from './resources/hazard_sas.png';
 function App() {
   const [map, setMap] = useState('');
   const handleSelect = (e) => {
-    console.log(e.value);
+    // console.log(e.value);
     setMap(e.value);
   };
   return (
