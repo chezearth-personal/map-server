@@ -49,21 +49,25 @@ function App() {
               ? <img src={rs_vci_hazard} className='hazard_maps' alt='Remote Sensing Vegetation Condition Index with hazard defined' />
               : ''
           }
-          {map === 'hazard_affected'
-            ? <img src={hazard_affected} className='hazard_maps' alt='Hazard definition in South Africa' />
-            : ''
+          {
+            map === 'hazard_affected'
+              ? <img src={hazard_affected} className='hazard_maps' alt='Hazard definition in South Africa' />
+              : ''
           }
-          {map === 'hazard_agriregions'
-            ? <img src={hazard_agriregions} className="hazard_maps" alt="Hazard, superimposed on agricultural regions in South Africa" />
-            : ''
+          {
+            map === 'hazard_agriregions'
+              ? <img src={hazard_agriregions} className="hazard_maps" alt="Hazard, superimposed on agricultural regions in South Africa" />
+              : ''
           }
-          {map === 'hazard_livezones'
-            ? <img src={hazard_livezones} className="hazard_maps" alt="Hazard, superimposed on livelihood zones in South Africa" />
-            : ''
+          {
+            map === 'hazard_livezones'
+              ? <img src={hazard_livezones} className="hazard_maps" alt="Hazard, superimposed on livelihood zones in South Africa" />
+              : ''
           }
-          {map === 'hazard_sas'
-            ? <img src={hazard_sas} className="hazard_maps" alt="Hazard, superimposed on enumeration small areas in South Africa"/>
-            : ''
+          {
+            map === 'hazard_sas'
+              ? <img src={hazard_sas} className="hazard_maps" alt="Hazard, superimposed on enumeration small areas in South Africa"/>
+              : ''
           }
         </div>
       </main>
