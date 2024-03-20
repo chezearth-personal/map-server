@@ -54,7 +54,7 @@
       "value": "outcome_pop_at_risk_fpl_hazard",
       "file": "./resources/outcome_pop-at-risk_fpl_hazard.png",
       "title": "Outcome: Hazard area overlaid onto percent of population forecast below the Food Poverty Line",
-      "description": ""
+      "description": "The percentage of the population in the enumeration small areas whose livehoods are forecast to result in them being below the Food Poverty Line. The hazard affected areas are the areas where the VCI is below 35%."
     },
     {
       "value": "outcome_pop_at_risk_fpl",
@@ -66,19 +66,20 @@
       "value": "outcome_def_per_at_risk_fpl",
       "file": "./resources/outcome_def-per-at_risk_fpl.png",
       "title": "Outcome: Food Poverty Line deficits per person at risk",
-      "description": ""
+      "description": "The amount of money needed for each person at below the Food Poverty Line up to reach that line."
     },
     {
       "value": "outcome_def_per_cap_fpl",
       "file": "./resources/outcome_def-per-cap_fpl.png",
       "title": "Outcome: Total Food Poverty Line deficits per capita",
-      "description": ""
+      "description": "The total amount of money needed for all people below the Food Poverty Line to reach that line."
+      
     },
     {
       "value": "outcome_pop_at_risk_fe",
       "file": "./resources/outcome_pop-at-risk_fe.png",
       "title": "Outcome: Percent of population at risk of food energy deficits",
-      "description": ""
+      "description": "The percentage of the population in the enumeration small areas whose livehoods are forecast to result in them being below the Food Energy Line."
     }
   ]
 }
