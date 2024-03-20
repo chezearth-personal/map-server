@@ -12,9 +12,8 @@ import hazard_sas from './resources/hazard_sas.png';
 import outcome_pop_at_risk_fpl from './resources/outcome_pop-at-risk_fpl.png';
 import outcome_def_per_cap_fpl from './resources/outcome_def-per-cap_fpl.png';
 import outcome_pop_at_risk_fe from './resources/outcome_pop-at-risk_fe.png';
-import outcome_def_per_at_risk_fpl from './resources/outcome_def-per-at_risk_fpl.png'
-import outcome_pop_at_risk_fpl_hazard from './resources/outcome_pop-at-risk_fpl_hazard.png'
-
+import outcome_def_per_at_risk_fpl from './resources/outcome_def-per-at_risk_fpl.png';
+import outcome_pop_at_risk_fpl_hazard from './resources/outcome_pop-at-risk_fpl_hazard.png';
 
 function App() {
   // console.log(mapDescriptions);
