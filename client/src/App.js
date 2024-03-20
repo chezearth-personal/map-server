@@ -9,18 +9,22 @@ import hazard_affected from './resources/hazard_affected.png';
 import hazard_agricregions from './resources/hazard_agricregions.png';
 import hazard_livezones from './resources/hazard_livezones.png';
 import hazard_sas from './resources/hazard_sas.png';
+import outcome_pop_at_risk_fpl from './resources/outcome_pop-at-risk_fpl.png';
+import outcome_def_per_cap_fpl from './resources/outcome_def-per-cap_fpl.png';
+import outcome_pop_at_risk_fe from './resources/outcome_pop-at-risk_fe.png';
+import outcome_def_per_at_risk_fpl from './resources/outcome_def-per-at_risk_fpl.png'
+import outcome_pop_at_risk_fpl_hazard from './resources/outcome_pop-at-risk_fpl_hazard.png'
 
 
 function App() {
-  console.log(mapDescriptions);
+  // console.log(mapDescriptions);
   const [map, setMap] = useState({
     image: null,
     value: mapDescriptions.maps[0].value,
     title: mapDescriptions.maps[0].title,
     description: mapDescriptions.maps[0].description
   });
-  const handleSelect = (e) => {
-    // console.log(e.value);
+  const handleSelect = async (e) => {
     const mapObject = (test) => {
       switch(test) {
         case 'livelihood_zones_a3':
@@ -37,12 +41,23 @@ function App() {
           return hazard_livezones;
         case 'hazard_sas':
           return hazard_sas;
+        case 'outcome_pop_at_risk_fpl':
+          return outcome_pop_at_risk_fpl;
+        case 'outcome_def_per_cap_fpl':
+          return outcome_def_per_cap_fpl;
+        case 'outcome_pop_at_risk_fe':
+          return outcome_pop_at_risk_fe;
+        case 'outcome_def_per_at_risk_fpl':
+          return outcome_def_per_at_risk_fpl;
+        case 'outcome_pop_at_risk_fpl_hazard':
+          return outcome_pop_at_risk_fpl_hazard;
         default:
           return null;
       }
     }
     const selectedMap = mapDescriptions.maps.find(map => map.value === e.value);
-    setMap(Object.assign({ ...selectedMap }, {image: mapObject(selectedMap.value)}));
+    // setMap({ ...selectedMap });
+    setMap(Object.assign({ ...selectedMap }, { image: mapObject(selectedMap.value) }));
   };
   return (
     <div className='App'>
@@ -51,14 +66,13 @@ function App() {
         <div className='selector'>
           <label htmlFor='mapToView'>Select the map you wish to view</label>
           <select id='mapToView' name='mapToView' onChange={e => handleSelect(e.target)}>
-            <option value={mapDescriptions.maps[0].value}>{mapDescriptions.maps[0].title}</option>
-            <option value={mapDescriptions.maps[1].value}>{mapDescriptions.maps[1].title}</option>
-            <option value={mapDescriptions.maps[2].value}>{mapDescriptions.maps[2].title}</option>
-            <option value={mapDescriptions.maps[3].value}>{mapDescriptions.maps[3].title}</option>
-            <option value={mapDescriptions.maps[4].value}>{mapDescriptions.maps[4].title}</option>
-            <option value={mapDescriptions.maps[5].value}>{mapDescriptions.maps[5].title}</option>
-            <option value={mapDescriptions.maps[6].value}>{mapDescriptions.maps[6].title}</option>
-            <option value={mapDescriptions.maps[7].value}>{mapDescriptions.maps[7].title}</option>
+          {mapDescriptions.maps.length > 0
+            ? mapDescriptions.maps
+              .map((map, index) => (
+                <option value={map.value} key={index}>{map.title}</option>
+              ))
+            : (<option value='default'>{'< Select Map >'}</option>)
+          }
           </select>
         </div>
         { map.value !== 'default'
