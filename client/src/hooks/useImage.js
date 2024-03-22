@@ -20,7 +20,6 @@ const useImage = (fileName) => {
     }
     fetchImage();
   }, [fileName]);
-  console.log('image =', image);
   return { loading, error, image };
 }
 

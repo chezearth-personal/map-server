@@ -2,7 +2,6 @@ import React from 'react';
 import useImage from '../hooks/useImage';
 
 export default function MapImage(props) {
-  console.log('props.map.file =', props.map.file);
   const { loading, error, image } = useImage(props.map.file);
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
