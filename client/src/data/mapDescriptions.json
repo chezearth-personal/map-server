@@ -16,13 +16,13 @@
     },
     {
       "value": "rs_vci",
-      "file": "rs_vci.png",
+      "file": "za_rs_vci.png",
       "title": "Remote Sensing Vegetation Condition Index",
       "description": "The Vegetation Condition Index (VCI) is a measure of how healthy the plants are. It shows how much the plants are growing compared with the average for that time of year. The VCI is based on satellite images that measure the amount of green in the landscape. This map shows the VCI for the whole country."
     },
     {
       "value": "rs_vci_hazard",
-      "file": "rs_vci_hazard.png",
+      "file": "za_rs_vci_hazard.png",
       "title": "Remote Sensing Vegetation Condition Index with Hazard Areas Defined",
       "description": "The pixels making up the Vegentation Condition Index raster map have been aggregated and combined to form a vector Harard Area Definition map. The hazard area is defined as the area where the VCI is below 35%."
     },
@@ -47,37 +47,37 @@
     {
       "value": "hazard_sas",
       "file": "za_hazard_sas.png",
-      "title": "Hazard and Enumeartion Small Areas",
+      "title": "Hazard and Enumeration Small Areas",
       "description": "The enumeration small areas are the smallest geographic areas for which census data are available. This map shows the hazard affected areas in relation to the enumeration small areas."
     },
     {
       "value": "outcome_pop_at_risk_fpl_hazard",
-      "file": "outcome_pop-at-risk_fpl_hazard.png",
+      "file": "za_outcome_pop-at-risk_fpl_hazard.png",
       "title": "Outcome: Hazard area overlaid onto percent of population forecast below the Food Poverty Line",
       "description": "The percentage of the population in the enumeration small areas whose livehoods are forecast to result in them being below the Food Poverty Line. The hazard affected areas are the areas where the VCI is below 35%."
     },
     {
       "value": "outcome_pop_at_risk_fpl",
-      "file": "outcome_pop-at-risk_fe.png",
+      "file": "za_outcome_pop-at-risk_fe.png",
       "title": "Outcome: Percent of population forecast below the Food Poverty Line",
       "description": "The percentage of the population in the enumeration small areas whose livehoods are forecast to result in them being below the Food Poverty Line."
     },
     {
       "value": "outcome_def_per_at_risk_fpl",
-      "file": "outcome_def-per-at_risk_fpl.png",
+      "file": "za_outcome_def-per-at_risk_fpl.png",
       "title": "Outcome: Food Poverty Line deficits per person at risk",
       "description": "The amount of money needed for each person at below the Food Poverty Line up to reach that line."
     },
     {
       "value": "outcome_def_per_cap_fpl",
-      "file": "outcome_def-per-cap_fpl.png",
+      "file": "za_outcome_def-per-cap_fpl.png",
       "title": "Outcome: Total Food Poverty Line deficits per capita",
       "description": "The total amount of money needed for all people below the Food Poverty Line to reach that line."
       
     },
     {
       "value": "outcome_pop_at_risk_fe",
-      "file": "outcome_pop-at-risk_fe.png",
+      "file": "za_outcome_pop-at-risk_fe.png",
       "title": "Outcome: Percent of population at risk of food energy deficits",
       "description": "The percentage of the population in the enumeration small areas whose livehoods are forecast to result in them being below the Food Energy Line."
     },
@@ -94,10 +94,28 @@
       "description": "The enumeration areas are the smallest geographic areas for which census data are available. The enumeration areas have been attributed to livelihood zones."
     },
     {
+      "value": "na_ndvi_may15",
+      "file": "na_ndvi_may15.png",
+      "title": "NDVI May 2015 in Namibia",
+      "description": "The Normalized Difference Vegetation Index (NDVI) is a measure of how healthy the plants are. It shows how much the plants are growing compared with the average for that time of year. The NDVI is based on satellite images that measure the amount of green in the landscape. This map shows the NDVI for the whole country."
+    },
+    {
+      "value": "na_ndvi_may15_affected",
+      "file": "na_ndvi_may15_affected.png",
+      "title": "NDVI May 2015 with Hazard Areas Defined",
+      "description": "The pixels making up the NDVI raster map have been aggregated and combined to form a vector Harard Area Definition map. The hazard area is defined as the area where the NDVI is below 35%. This map shows the NDVI for the whole country."
+    },
+    {
       "value": "na_hazard",
       "file": "na_hazard.png",
       "title": "Hazard Affected Areas in Namibia",
       "description": "The hazard affected areas are the areas where the VCI is below 35%. This map shows the aggregated hazard affected areas across Namibia."
+    },
+    {
+      "value": "na_lzs_hazard",
+      "file": "na_lzs_hazard.png",
+      "title": "Hazard area overlaid onto livelihood zones in Namibia",
+      "description": "The livelihood zones are areas where people have similar patterns of making a living. In each zone, people share similar options for making a living, such as farming, fishing, or herding. The zones are based on the type of land, the climate, and the plants and animals that live there. This map shows the hazard affected areas in relation to the livelihood zones."
     },
     {
       "value": "na_lzs_eas_hazard",
