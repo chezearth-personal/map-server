@@ -19,7 +19,7 @@ function App() {
   return (
     <div className='App'>
       <main>
-        <h1>Charles Rethman's Maps</h1>
+        <h1>{`Charles Rethman's Maps`}</h1>
         <Selector maps={mapDescriptions.maps} select={handleSelect}/>
         { map.value !== 'default'
           ? <MapImage map={map} />
