@@ -1,18 +1,18 @@
 // import React from 'react';
 
 export default function Selector({ images, select, text }) {
-  const countries = new Set(images.map(map => map.country));
-  const countriesArr = Array.from(countries);
+  const groups = new Set(images.map(map => map.group));
+  const groupsArr = Array.from(groups);
   return (
     <div className='selector'>
       <label htmlFor='mapToView'>{text}</label>
       <select id='mapToView' name='mapToView' onChange={e => select(e.target)}>
-      {countriesArr.length > 0
-        ? countriesArr
-          .map((country, index) => (
-            <optgroup label={country} key={index}>
+      {groupsArr.length > 0
+        ? groupsArr
+          .map((group, index) => (
+            <optgroup label={group} key={index}>
               {images
-                .filter(map => map.country === country)
+                .filter(map => map.group === group)
                 .map((map, index) => (
                   <option value={map.value} key={index}>{map.title}</option>
                 ))

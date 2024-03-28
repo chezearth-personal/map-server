@@ -9,18 +9,25 @@
           "description": ""
         },
         {
-          "value": "dual_battery_schematic_1",
+          "value": "dual_battery_1",
           "group": "Schematics",
           "file": "dual-battery-controller-300tdi_sch_1.png",
-          "title": "Dual Battery Controller Schematic, Page 1",
+          "title": "Dual Battery Controller, Page 1",
           "description": "This is the schematic for the dual battery controller. The controller is designed to manage the charging of an auxillary battery in a vehicle. This page shows the battery controller. It works by starting a timer (IC5) when the ignition is on, the starter motor has come on and gone off, and the auxillary batter is present. After the time period elapses the relay drive excites the Solenoid-Control-OUT lead, which switches the batteries together."
         },
         {
-          "value": "dual_battery_schematic_2",
+          "value": "dual_battery_2",
           "group": "Schematics",
           "file": "dual-battery-controller-300tdi_sch_2.png",
-          "title": "Dual Battery Controller Schematic, Page 2",
-          "description": "This is the schematic for the dual battery controller. The controller is designed to manage the charging of an auxillary battery in a vehicle. This page shows the battery controller. It works by starting a timer (IC5) when the ignition is on, the starter motor has come on and gone off, and the auxillary batter is present. After the time period elapses the relay drive excites the Solenoid-Control-OUT lead, which switches the batteries together."
+          "title": "Dual Battery Controller, Page 2",
+          "description": "This is the schematic for the battery meters. This is designed to give a quickly observed picture of battery condition. It works by feeding the raw battery voltage levels to the bar display drivers IC6 and IC7. The high-voltage and low-voltage thresholds can be trimmed with two variable resistor trimmers. The threshold voltages are stabilised by a zener diode D15 and voltage spikes are suppressed by capacitors C6, C7, C8 and C9."
+        },
+        {
+          "value": "dual_battery_pcbs",
+          "group": "Printed Circuit Boardi Layout",
+          "file": "dual-battery-controller-300tdi_pcb.png",
+          "title": "Dual Battery Controller",
+          "description": "This is the schematic for the dual battery controller. The controller is designed to manage the charging of an auxillary battery in a vehicle. This page shows the printed circult board layouts for both the dual battery controller and the battery meters."
         }
       ],
       "maps": [
