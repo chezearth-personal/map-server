@@ -10,7 +10,7 @@ const useImage = (fileName) => {
         if (!fileName) {
           throw new Error('File name is missing.');
         }
-        const response = await import(`../../../public/resources/${fileName}`);
+        const response = await import(`../../../public/resources/images/maps/${fileName}`);
         setImage(response);
       } catch (err) {
         setError(err);

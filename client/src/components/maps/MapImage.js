@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import useImage from '../hooks/useImage';
 
 export default function MapImage({ map }) {

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 
 export default function Selector({ maps, select }) {
   const countries = new Set(maps.map(map => map.country));
