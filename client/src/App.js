@@ -14,7 +14,7 @@ function App() {
     <div className='App'>
       <header>
         <p id='hed_' className='thumbnail_text' onClick={handleClick}>Home</p>
-        <p id='hed_electronics' className='thumbnail_text' onClick={handleClick}>Electronics</p>
+        <p id='hed_electronics' className='thumbnail_text' onClick={handleClick}>Electronic Design</p>
         <p id='hed_maps' className='thumbnail_text' onClick={handleClick}>Maps</p>
       </header>
       <Routes>
