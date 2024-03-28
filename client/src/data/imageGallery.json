@@ -1,7 +1,6 @@
 {
   "heading": "Image Gallery",
-  "images" : [
-    {
+  "images":  {
       "electronics" : [
         {
           "value": "default",
@@ -9,9 +8,7 @@
           "title": "< Select electronics >",
           "description": ""
         }
-      ]
-    },
-    {
+      ],
       "maps": [
         {
           "value": "default",
@@ -156,5 +153,4 @@
         }
       ]
     }
-  ]
 }
