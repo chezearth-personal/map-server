@@ -11,7 +11,7 @@ const useImage = (filePath) => {
         if (!filePath) {
           throw new Error('File name is missing.');
         }
-        const response = await import(`../../../public/resources/images/${filePath}`);
+        const response = await import(`../../../public/images/resources/${filePath}`);
         setImage(response);
       } catch (err) {
         setError(err);
