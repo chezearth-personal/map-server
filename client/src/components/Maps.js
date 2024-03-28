@@ -13,7 +13,7 @@ const Maps = () => {
   });
   const handleSelect = async (e) => {
     const selectedMap = imageGallery.images.maps.find(map => map.value === e.value);
-    setMap({ ...selectedMap });
+    setMap(selectedMap);
   };
   return (
     <div>
@@ -25,7 +25,7 @@ const Maps = () => {
         />
         { map.value === 'default'
           ? null
-          : <Image imageObj={map} />
+          : <Image imageObj={map} path='maps' />
         }
     </div>
   );

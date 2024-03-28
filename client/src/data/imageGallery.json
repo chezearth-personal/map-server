@@ -7,6 +7,12 @@
           "file": "",
           "title": "< Select electronics >",
           "description": ""
+        },
+        {
+          "value": "dual_battery_schematic",
+          "file": "dual-battery-controller-300tdi.pcb.png",
+          "title": "Dual Battery Controller Schematic",
+          "description": "This is the schematic for the dual battery controller. The controller is designed to manage the charging of an auxillary battery in a vehicle."
         }
       ],
       "maps": [

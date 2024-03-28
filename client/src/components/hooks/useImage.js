@@ -1,16 +1,17 @@
 import { useEffect, useState } from 'react';
 
-const useImage = (fileName) => {
+const useImage = (filePath) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [image, setImage] = useState(null);
   useEffect(() => {
+    console.log('filePath =', filePath);
     const fetchImage = async () => {
       try {
-        if (!fileName) {
+        if (!filePath) {
           throw new Error('File name is missing.');
         }
-        const response = await import(`../../../public/resources/images/maps/${fileName}`);
+        const response = await import(`../../../public/resources/images/${filePath}`);
         setImage(response);
       } catch (err) {
         setError(err);
@@ -19,7 +20,7 @@ const useImage = (fileName) => {
       }
     }
     fetchImage();
-  }, [fileName]);
+  }, [filePath]);
   return { loading, error, image };
 }
 
