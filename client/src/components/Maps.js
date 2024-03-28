@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Selector from './Selector';
-import Image from './Image';
+import Selector from './image-display/Selector';
+import Image from './image-display/Image';
 import imageGallery from '../data/imageGallery.json';
 
 const Maps = () => {

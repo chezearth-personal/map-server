@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Selector from './Selector';
-import Image from './Image';
+import Selector from './image-display/Selector';
+import Image from './image-display/Image';
 import imageGallery from '../data/imageGallery';
 
 const Electronics = () => {
@@ -13,7 +13,9 @@ const Electronics = () => {
   });
   console.log(elec);
   const handleSelect = async (e) => {
+    console.log('e.value:', e.value);
     const selectedElec = imageGallery.images.electronics.find(elec => elec.value === e.value);
+    console.log('selectedElec:', selectedElec);
     setElec(selectedElec);
   };
   return (

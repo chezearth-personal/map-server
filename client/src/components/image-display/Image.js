@@ -1,5 +1,5 @@
 // import React from 'react';
-import useImage from './hooks/useImage';
+import useImage from '../hooks/useImage';
 
 export default function Image({ imageObj, path }) {
   const { loading, error, image } = useImage(`${path}/${imageObj.file}`);

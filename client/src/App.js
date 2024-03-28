@@ -10,8 +10,8 @@ function App() {
     <div className='App'>
       <header>
         <a href='/'>Home</a>
-        <a href='/maps'>Maps</a>
         <a href='/electronics'>Electronics</a>
+        <a href='/maps'>Maps</a>
       </header>
         <BrowserRouter>
           <Routes>
