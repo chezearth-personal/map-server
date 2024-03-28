@@ -1,17 +1,15 @@
-// import { useState } from 'react';
-// import { useNavigate } from 'react-router-dom';
 import imageGallery from '../data/imageGallery.json';
 import Image from './image-display/Image';
 
 const Home = ({ click }) => {
-  const numMaps = imageGallery.images.maps.length - 1;
   const numElectronics = imageGallery.images.electronics.length - 1;
-  const randomMap = Math.floor(Math.random() * numMaps) + 1;
+  const numMaps = imageGallery.images.maps.length - 1;
   const randomElectronics = Math.floor(Math.random() * numElectronics) + 1;
+  const randomMap = Math.floor(Math.random() * numMaps) + 1;
   const mapImage = {
     image: null,
-    file: imageGallery.images.maps[randomMap + 1].file,
-    value: imageGallery.images.maps[randomMap + 1].value,
+    file: imageGallery.images.maps[randomMap].file,
+    value: imageGallery.images.maps[randomMap].value,
     title: '',
     description: ''
   };
@@ -33,7 +31,7 @@ const Home = ({ click }) => {
             className='thumbnail_text'
             onClick={click}
           >
-            Electronic Design {randomElectronics}/{numElectronics}
+            Electronic Design
           </p>
           <div className='thumbnail__img' onClick={click}>
             <Image

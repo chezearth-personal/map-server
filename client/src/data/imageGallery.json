@@ -97,7 +97,7 @@
         {
           "value": "outcome_pop_at_risk_fpl",
           "group": "South Africa",
-          "file": "za_outcome_pop-at-risk_fe.png",
+          "file": "za_outcome_pop-at-risk_fpl.png",
           "title": "Outcome: Percent of population forecast below the Food Poverty Line",
           "description": "The percentage of the population in the enumeration small areas whose livehoods are forecast to result in them being below the Food Poverty Line."
         },
@@ -157,6 +157,13 @@
           "file": "na_hazard.png",
           "title": "Hazard Affected Areas in Namibia",
           "description": "The hazard affected areas are the areas where the VCI is below 35%. This map shows the aggregated hazard affected areas across Namibia."
+        },
+        {
+          "value": "na_affected_areas",
+          "group": "Namibia",
+          "file": "na_affected_areas.png",
+          "title": "Hazard Affected Enumeration Areas in Namibia",
+          "description": "The enumeration areas are the smallest geographic areas for which census data are available. The hazard affected areas, where the VCI is below 35%, have been overalid onto the enumeration areas."
         },
         {
           "value": "na_lzs_hazard",
