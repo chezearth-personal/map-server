@@ -67,7 +67,7 @@ main {
   height: 200px;
 }
 .thumbnail__img:hover {
-  border: 2px solid #61dafb;
+  border: 3px solid #317afb;
   cursor: grab;
 }
 
@@ -77,7 +77,8 @@ main {
   margin: 0;
 }
 .thumbnail_text:hover {
-  color: #61dafb;
+  font-weight: bold;
+  color: #317afb;
   cursor: grab;
 }
 
