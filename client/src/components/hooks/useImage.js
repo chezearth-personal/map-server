@@ -5,7 +5,6 @@ const useImage = (filePath) => {
   const [error, setError] = useState(null);
   const [image, setImage] = useState(null);
   useEffect(() => {
-    console.log('filePath =', filePath);
     const fetchImage = async () => {
       try {
         if (!filePath) {

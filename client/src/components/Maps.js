@@ -25,7 +25,11 @@ const Maps = () => {
         />
         { map.value === 'default'
           ? null
-          : <Image imageObj={map} path='maps' />
+          : <Image
+              imageObj={map}
+              path='maps'
+              imgClass='img__display'
+            />
         }
     </div>
   );

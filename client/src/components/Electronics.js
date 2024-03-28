@@ -11,11 +11,8 @@ const Electronics = () => {
     title: imageGallery.images.electronics[0].title,
     description: imageGallery.images.electronics[0].description
   });
-  console.log(elec);
   const handleSelect = async (e) => {
-    console.log('e.value:', e.value);
     const selectedElec = imageGallery.images.electronics.find(elec => elec.value === e.value);
-    console.log('selectedElec:', selectedElec);
     setElec(selectedElec);
   };
   return (
@@ -28,7 +25,11 @@ const Electronics = () => {
         />
         { elec.value === 'default'
           ? null
-          : <Image imageObj={elec} path='electronics' />
+          : <Image
+              imageObj={elec}
+              path='electronics'
+              imgClass='img__display'
+            />
         }
     </div>
   );
