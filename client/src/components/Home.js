@@ -6,8 +6,8 @@ import Image from './image-display/Image';
 const Home = ({ click }) => {
   const numMaps = imageGallery.images.maps.length - 1;
   const numElectronics = imageGallery.images.electronics.length - 1;
-  const randomMap = Math.floor(Math.random() * numMaps);
-  const randomElectronics = Math.floor(Math.random() * numElectronics);
+  const randomMap = Math.floor(Math.random() * numMaps) + 1;
+  const randomElectronics = Math.floor(Math.random() * numElectronics) + 1;
   const mapImage = {
     image: null,
     file: imageGallery.images.maps[randomMap + 1].file,
@@ -17,8 +17,8 @@ const Home = ({ click }) => {
   };
   const electronicsImage = {
     image: null,
-    file: imageGallery.images.electronics[randomElectronics + 1].file,
-    value: imageGallery.images.electronics[randomElectronics + 1].value,
+    file: imageGallery.images.electronics[randomElectronics].file,
+    value: imageGallery.images.electronics[randomElectronics].value,
     title: '',
     description: ''
   };
@@ -33,12 +33,12 @@ const Home = ({ click }) => {
             className='thumbnail_text'
             onClick={click}
           >
-            Electronic Design
+            Electronic Design {randomElectronics}/{numElectronics}
           </p>
           <div className='thumbnail__img' onClick={click}>
             <Image
               imageObj={electronicsImage}
-              path='electronics'
+              path='thumbnails/electronics'
               imgClass='img__thumbnail'
               id='img_electronics'
             />
@@ -55,7 +55,7 @@ const Home = ({ click }) => {
           <div className='thumbnail__img' onClick={click}>
             <Image
               imageObj={mapImage}
-              path='maps'
+              path='thumbnails/maps'
               imgClass='img__thumbnail'
               id='img_maps'
             />
