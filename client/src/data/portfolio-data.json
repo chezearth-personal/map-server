@@ -15,7 +15,7 @@
             {
               "value": "default",
               "file": "",
-              "title": "< Select electronics >",
+              "title": "< Select electronic design >",
               "description": ""
             },
             {
@@ -30,14 +30,14 @@
               "group": "Schematics",
               "file": "dual-battery-controller-300tdi_sch_2.png",
               "title": "Dual Battery Controller, Page 2",
-              "description": "This is the schematic for the battery meters. This is designed to give a quickly observed picture of battery condition. It works by feeding the raw battery voltage levels to the bar display drivers IC6 and IC7. The high-voltage and low-voltage thresholds can be trimmed with two variable resistor trimmers. The threshold voltages are stabilised by a zener diode D15 and voltage spikes are suppressed by capacitors C6, C7, C8 and C9."
+              "description": "This is the schematic for the battery meters. The battery meterss are designed to give a quickly observed picture of each battery's condition. It works by feeding the raw battery voltage levels to the bar display drivers IC6 and IC7. The high-voltage and low-voltage thresholds can be trimmed with two variable resistor trimmers. The threshold voltages are stabilised by a zener diode D15 and voltage spikes are suppressed by capacitors C6, C7, C8 and C9."
             },
             {
               "value": "dual_battery_pcbs",
-              "group": "Printed Circuit Boardi Layout",
+              "group": "Printed Circuit Board Layout",
               "file": "dual-battery-controller-300tdi_pcb.png",
               "title": "Dual Battery Controller",
-              "description": "This is the schematic for the dual battery controller. The controller is designed to manage the charging of an auxillary battery in a vehicle. This page shows the printed circult board layouts for both the dual battery controller and the battery meters."
+              "description": "This is the layout for the dual battery controller and battery meter PCBs. The controller is designed to manage the charging of an auxillary battery in a vehicle and the battery mneter is a bar graph display of batter condition. Each board is double-sided and the two boards are designed to be connected with a simple four-pin connector."
             }
           ]
         },
