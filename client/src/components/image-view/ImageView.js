@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import Selector from './Selector';
 import Image from './Image';
-// import portfolioData from '../data/portfolio-data.json';
 
 const ImageView = ({ topic, owner }) => {
   const [imageView, setImageView] = useState({
