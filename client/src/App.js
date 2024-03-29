@@ -8,7 +8,7 @@ import './App.css';
 function App() {
   const navigate = useNavigate();
   const handleClick = (e) => {
-    navigate(`/${e.target.id.substring(4)}`);
+    navigate(`/${e.target.id.substring(4).length ? e.target.id.substring(4) : ''}`);
   }
   return (
     <div className='App'>
