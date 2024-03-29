@@ -5,10 +5,10 @@ import Image from './Image';
 const ImageView = ({ topic, owner }) => {
   const [imageView, setImageView] = useState({
     image: null,
-    file: topic.images[0].file,
-    value: topic.images[0].value,
-    title: topic.images[0].title,
-    description: topic.images[0].description
+    file: topic.images.length > 0 ? topic.images[0].file : '',
+    value: topic.images.length > 0 ? topic.images[0].value : '',
+    title: topic.images.length > 0 ? topic.images[0].title : '',
+    description: topic.images.length > 0 ? topic.images[0].description : ''
   });
   const handleSelect = async (e) => {
     const selectedImageView = topic.images.find(image => image.value === e.value);

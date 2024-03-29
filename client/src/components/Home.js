@@ -5,12 +5,10 @@ import Image from './image-view/Image';
 const Owner = () => portfolioData.owners[0];
 
 const Home = ({ click }) => {
-  // console.log('portfolioData = ', portfolioData);
-  // console.log('portfolioData.owners[0] = ', portfolioData.owners[0]);
+  /** Selects a random imgae from each group for display in the thumbnail */
   const randomPicks = Owner().topics.map(topic => {
     return { ...{ name: topic.name }, ...{ random: (Math.floor(Math.random() * (topic.images.length - 1)) + 1) } }
   });
-  // console.log('randomPicks = ', randomPicks);
   return (
     <div>
       <h1>{`Welcome to ${Owner().firstName} ${Owner().lastName}'s Portfolio`}</h1>
