@@ -1,0 +1,202 @@
+{
+  "heading": "Portfolio data",
+  "site": "https://rethman.net",
+  "homeHeading": "Welcome to ${firstName} ${lastName}'s Portfolio",
+  "owners": [
+    {
+      "firstName": "Charles",
+      "lastName": "Rethman",
+      "topics": [
+        {
+          "name": "electronics",
+          "displayName": "Electronic Design",
+          "componentName": "Electronics",
+          "images": [
+            {
+              "value": "default",
+              "file": "",
+              "title": "< Select electronics >",
+              "description": ""
+            },
+            {
+              "value": "dual_battery_1",
+              "group": "Schematics",
+              "file": "dual-battery-controller-300tdi_sch_1.png",
+              "title": "Dual Battery Controller, Page 1",
+              "description": "This is the schematic for the dual battery controller. The controller is designed to manage the charging of an auxillary battery in a vehicle. This page shows the battery controller. It works by starting a timer (IC5) when the ignition is on, the starter motor has come on and gone off, and the auxillary batter is present. After the time period elapses the relay drive excites the Solenoid-Control-OUT lead, which switches the batteries together."
+            },
+            {
+              "value": "dual_battery_2",
+              "group": "Schematics",
+              "file": "dual-battery-controller-300tdi_sch_2.png",
+              "title": "Dual Battery Controller, Page 2",
+              "description": "This is the schematic for the battery meters. This is designed to give a quickly observed picture of battery condition. It works by feeding the raw battery voltage levels to the bar display drivers IC6 and IC7. The high-voltage and low-voltage thresholds can be trimmed with two variable resistor trimmers. The threshold voltages are stabilised by a zener diode D15 and voltage spikes are suppressed by capacitors C6, C7, C8 and C9."
+            },
+            {
+              "value": "dual_battery_pcbs",
+              "group": "Printed Circuit Boardi Layout",
+              "file": "dual-battery-controller-300tdi_pcb.png",
+              "title": "Dual Battery Controller",
+              "description": "This is the schematic for the dual battery controller. The controller is designed to manage the charging of an auxillary battery in a vehicle. This page shows the printed circult board layouts for both the dual battery controller and the battery meters."
+            }
+          ]
+        },
+        {
+          "name": "maps",
+          "displayName": "Maps",
+          "componentName": "Maps",
+          "images": [
+            {
+              "value": "default",
+              "file": "",
+              "title": "< Select Map >",
+              "description": ""
+            },
+            {
+              "value": "livelihood_zones_a3",
+              "group": "South Africa",
+              "file": "za_livelihood_zones_v2_a3.png",
+              "title": "Livelihood Zones (A3 size image) in South Africa",
+              "description": "Livelihood zones are areas where people have similar patterns of making a living. In each zone, people share similar options for making a living, such as farming, fishing, or herding. The zones are based on the type of land, the climate, and the plants and animals that live there. This map shows the livelihood zones in the country. The zones are based on the type of land, the climate, and the plants and animals that live there."
+
+            },
+            {
+              "value": "rs_vci",
+              "group": "South Africa",
+              "file": "za_rs_vci.png",
+              "title": "Remote Sensing Vegetation Condition Index",
+              "description": "The Vegetation Condition Index (VCI) is a measure of how healthy the plants are. It shows how much the plants are growing compared with the average for that time of year. The VCI is based on satellite images that measure the amount of green in the landscape. This map shows the VCI for the whole country."
+            },
+            {
+              "value": "rs_vci_hazard",
+              "group": "South Africa",
+              "file": "za_rs_vci_hazard.png",
+              "title": "Remote Sensing Vegetation Condition Index with Hazard Areas Defined",
+              "description": "The pixels making up the Vegentation Condition Index raster map have been aggregated and combined to form a vector Harard Area Definition map. The hazard area is defined as the area where the VCI is below 35%."
+            },
+            {
+              "value": "hazard_affected",
+              "group": "South Africa",
+              "file": "za_hazard_affected.png",
+              "title": "Hazard Affected Areas",
+              "description": "The hazard affected areas are the areas where the VCI is below 35%. This map shows the aggregated hazard affected areas across the country."
+            },
+            {
+              "value": "hazard_agricregions",
+              "group": "South Africa",
+              "file": "za_hazard_agricregions.png",
+              "title": "Harzard area overlaid onto agricultural zones",
+              "description": "The agricultural Zones are broadly-defined areas for agricultural practice. This map shows the hazard affected areas in relation to the agricultural zones."
+            },
+            {
+              "value": "hazard_livezones",
+              "group": "South Africa",
+              "file": "za_hazard_livezones.png",
+              "title": "Hazard area overlaid onto livelihood zones",
+              "description": "The livelihood zones are areas where people have similar patterns of making a living. In each zone, people share similar options for making a living, such as farming, fishing, or herding. The zones are based on the type of land, the climate, and the plants and animals that live there. This map shows the hazard affected areas in relation to the livelihood zones."
+            },
+            {
+              "value": "hazard_sas",
+              "group": "South Africa",
+              "file": "za_hazard_sas.png",
+              "title": "Hazard and Enumeration Small Areas",
+              "description": "The enumeration small areas are the smallest geographic areas for which census data are available. This map shows the hazard affected areas in relation to the enumeration small areas."
+            },
+            {
+              "value": "outcome_pop_at_risk_fpl_hazard",
+              "group": "South Africa",
+              "file": "za_outcome_pop-at-risk_fpl_hazard.png",
+              "title": "Outcome: Hazard area overlaid onto percent of population forecast below the Food Poverty Line",
+              "description": "The percentage of the population in the enumeration small areas whose livehoods are forecast to result in them being below the Food Poverty Line. The hazard affected areas are the areas where the VCI is below 35%."
+            },
+            {
+              "value": "outcome_pop_at_risk_fpl",
+              "group": "South Africa",
+              "file": "za_outcome_pop-at-risk_fpl.png",
+              "title": "Outcome: Percent of population forecast below the Food Poverty Line",
+              "description": "The percentage of the population in the enumeration small areas whose livehoods are forecast to result in them being below the Food Poverty Line."
+            },
+            {
+              "value": "outcome_def_per_at_risk_fpl",
+              "group": "South Africa",
+              "file": "za_outcome_def-per-at_risk_fpl.png",
+              "title": "Outcome: Food Poverty Line deficits per person at risk",
+              "description": "The amount of money needed for each person at below the Food Poverty Line up to reach that line."
+            },
+            {
+              "value": "outcome_def_per_cap_fpl",
+              "group": "South Africa",
+              "file": "za_outcome_def-per-cap_fpl.png",
+              "title": "Outcome: Total Food Poverty Line deficits per capita",
+              "description": "The total amount of money needed for all people below the Food Poverty Line to reach that line."
+              
+            },
+            {
+              "value": "outcome_pop_at_risk_fe",
+              "group": "South Africa",
+              "file": "za_outcome_pop-at-risk_fe.png",
+              "title": "Outcome: Percent of population at risk of food energy deficits",
+              "description": "The percentage of the population in the enumeration small areas whose livehoods are forecast to result in them being below the Food Energy Line."
+            },
+            {
+              "value": "na_lzs",
+              "group": "Namibia",
+              "file": "na_lzs.png",
+              "title": "Livelihood Zones in Namibia",
+              "description": "Livelihood zones are areas where people have similar patterns of making a living. In each zone, people share similar options for making a living, such as farming, fishing, or herding. The zones are based on the type of land, the climate, and the plants and animals that live there. This map shows the livelihood zones in Namibia."
+            },
+            {
+              "value": "na_lzs_eas",
+              "group": "Namibia",
+              "file": "na_lzs_eas.png",
+              "title": "Enumeration areas attributed to livelihood zones in Namibia",
+              "description": "The enumeration areas are the smallest geographic areas for which census data are available. The enumeration areas have been attributed to livelihood zones."
+            },
+            {
+              "value": "na_ndvi_may15",
+              "group": "Namibia",
+              "file": "na_ndvi_may15.png",
+              "title": "NDVI May 2015 in Namibia",
+              "description": "The Normalized Difference Vegetation Index (NDVI) is a measure of how healthy the plants are. It shows how much the plants are growing compared with the average for that time of year. The NDVI is based on satellite images that measure the amount of green in the landscape. This map shows the NDVI for the whole country."
+            },
+            {
+              "value": "na_ndvi_may15_affected",
+              "group": "Namibia",
+              "file": "na_ndvi_may15_affected.png",
+              "title": "NDVI May 2015 with Hazard Areas Defined",
+              "description": "The pixels making up the NDVI raster map have been aggregated and combined to form a vector Harard Area Definition map. The hazard area is defined as the area where the NDVI is below 35%. This map shows the NDVI for the whole country."
+            },
+            {
+              "value": "na_hazard",
+              "group": "Namibia",
+              "file": "na_hazard.png",
+              "title": "Hazard Affected Areas in Namibia",
+              "description": "The hazard affected areas are the areas where the VCI is below 35%. This map shows the aggregated hazard affected areas across Namibia."
+            },
+            {
+              "value": "na_affected_areas",
+              "group": "Namibia",
+              "file": "na_affected_areas.png",
+              "title": "Hazard Affected Enumeration Areas in Namibia",
+              "description": "The enumeration areas are the smallest geographic areas for which census data are available. The hazard affected areas, where the VCI is below 35%, have been overalid onto the enumeration areas."
+            },
+            {
+              "value": "na_lzs_hazard",
+              "group": "Namibia",
+              "file": "na_lzs_hazard.png",
+              "title": "Hazard area overlaid onto livelihood zones in Namibia",
+              "description": "The livelihood zones are areas where people have similar patterns of making a living. In each zone, people share similar options for making a living, such as farming, fishing, or herding. The zones are based on the type of land, the climate, and the plants and animals that live there. This map shows the hazard affected areas in relation to the livelihood zones."
+            },
+            {
+              "value": "na_lzs_eas_hazard",
+              "group": "Namibia",
+              "file": "na_lzs_eas_hazard.png",
+              "title": "Hazard area overlaid onto enumeration areas attributed to livelihood zones in Namibia",
+              "description": "The enumeration areas are the smallest geographic areas for which census data are available. The enumeration areas have been attributed to livelihood zones and the hazard affected area overlaid them."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

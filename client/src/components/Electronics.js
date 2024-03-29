@@ -1,25 +1,26 @@
 import { useState } from 'react';
 import Selector from './image-display/Selector';
 import Image from './image-display/Image';
-import imageGallery from '../data/imageGallery';
+import portfolioData from '../data/portfolio-data.json';
 
 const Electronics = () => {
+  const images = portfolioData.owners[0].topics.find(topic => topic.name === 'electronics').images;
   const [elec, setElec] = useState({
     image: null,
-    file: imageGallery.images.electronics[0].file,
-    value: imageGallery.images.electronics[0].value,
-    title: imageGallery.images.electronics[0].title,
-    description: imageGallery.images.electronics[0].description
+    file: images[0].file,
+    value: images[0].value,
+    title: images[0].title,
+    description: images[0].description
   });
   const handleSelect = async (e) => {
-    const selectedElec = imageGallery.images.electronics.find(elec => elec.value === e.value);
+    const selectedElec = images.find(elec => elec.value === e.value);
     setElec(selectedElec);
   };
   return (
     <div>
         <h1>{`Charles Rethman's Electronics`}</h1>
         <Selector
-          images={imageGallery.images.electronics}
+          images={images}
           select={handleSelect}
           text='Select the electronics design you wish to view'
         />

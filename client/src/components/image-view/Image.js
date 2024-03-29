@@ -5,7 +5,7 @@ export default function Image({ imageObj, ...props }) {
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;
   return (
-    <div>
+    <>
       <div className={props.imgClass}>
         <img
           className={props.imgClass}
@@ -18,6 +18,6 @@ export default function Image({ imageObj, ...props }) {
         <h4>{imageObj.title}</h4>
         <p className='description'>{imageObj.description}</p>
       </div>
-    </div>
+    </>
   );
 }
