@@ -24,12 +24,12 @@ function App() {
   return (
     <div className='App'>
       <header>
-        <p id='hed_' className='thumbnail_text' onClick={handleClick}>Home</p>
+        <p id='hed_' className='thumbnail_txt header__txt' onClick={handleClick}>Home</p>
         {Owner().topics.map((topic, index) => (
           <p
             key={index}
             id={`hed_${topic.name}`}
-            className='thumbnail_text'
+            className='thumbnail_txt header__txt'
             onClick={handleClick}
           >
             {topic.displayName}

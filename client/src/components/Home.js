@@ -8,13 +8,13 @@ const Home = ({ click, owner }) => {
   return (
     <div>
       <h1>{`Welcome to ${owner.firstName} ${owner.lastName}'s Portfolio`}</h1>
-      <h3>{`Please select a gallery to view`}</h3>
+      <h3>{`Please select a topic to view`}</h3>
       <div className='gallery'>
         {owner.topics.map((topic, index) => (
           <div key={index} className='thumbnail'>
             <p
               id={`txt_${topic.name}`}
-              className='thumbnail_text'
+              className='thumbnail_txt'
               onClick={click}
             >
               {topic.displayName}
