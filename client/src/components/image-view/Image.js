@@ -1,6 +1,7 @@
 import useImage from '../hooks/useImage';
 
 export default function Image({ imageObj, ...props }) {
+  // console.log('imageObj =', imageObj);
   const { loading, error, image } = useImage(`${props.path}/${imageObj.file}`);
   if (loading) return <div>Loading...</div>;
   if (error) return <div>Error: {error.message}</div>;

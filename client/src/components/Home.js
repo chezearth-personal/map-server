@@ -1,20 +1,16 @@
-import portfolioData from '../data/portfolio-data.json';
 import Image from './image-view/Image';
 
-
-const Owner = () => portfolioData.owners[0];
-
-const Home = ({ click }) => {
+const Home = ({ click, owner }) => {
   /** Selects a random imgae from each group for display in the thumbnail */
-  const randomPicks = Owner().topics.map(topic => {
+  const randomPicks = owner.topics.map(topic => {
     return { ...{ name: topic.name }, ...{ random: (Math.floor(Math.random() * (topic.images.length - 1)) + 1) } }
   });
   return (
     <div>
-      <h1>{`Welcome to ${Owner().firstName} ${Owner().lastName}'s Portfolio`}</h1>
+      <h1>{`Welcome to ${owner.firstName} ${owner.lastName}'s Portfolio`}</h1>
       <h3>{`Please select a gallery to view`}</h3>
       <div className='gallery'>
-        {Owner().topics.map((topic, index) => (
+        {owner.topics.map((topic, index) => (
           <div key={index} className='thumbnail'>
             <p
               id={`txt_${topic.name}`}
@@ -39,4 +35,3 @@ const Home = ({ click }) => {
 }
 
 export default Home;
-export { Owner };

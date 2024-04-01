@@ -1,19 +1,21 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import Selector from './Selector';
 import Image from './Image';
 
-const ImageView = ({ topic, owner }) => {
-  const [imageView, setImageView] = useState({
-    image: null,
-    file: topic.images.length > 0 ? topic.images[0].file : '',
-    value: topic.images.length > 0 ? topic.images[0].value : '',
-    title: topic.images.length > 0 ? topic.images[0].title : '',
-    description: topic.images.length > 0 ? topic.images[0].description : ''
-  });
+const ImageView = ({
+  owner,
+  topic,
+  imageView,
+  setImageView
+}) => {
+  // console.log('topic =', topic);
   const handleSelect = async (e) => {
+    // console.log('e.value =', e.value);
     const selectedImageView = topic.images.find(image => image.value === e.value);
     setImageView(selectedImageView);
   };
+  // console.log('imageView =', imageView);
+  // console.log('topic =', topic);
   return (
     <div>
         <h1>{`${owner().firstName} ${owner().lastName}'s ${topic.displayName}`}</h1>
@@ -21,6 +23,7 @@ const ImageView = ({ topic, owner }) => {
           images={topic.images}
           select={handleSelect}
           text={`Select the ${topic.displayName} you wish to view`}
+          initial={imageView.value}
         />
         { imageView.value === 'default'
           ? null
@@ -33,6 +36,5 @@ const ImageView = ({ topic, owner }) => {
     </div>
   );
 }
-
 
 export default ImageView;
