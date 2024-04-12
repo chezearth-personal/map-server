@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
-import Home from './components/Home';
-import ImageView from './components/image-view/ImageView';
+import { Home, ImageView } from 'components';
+// import ImageView from './components/image-view/ImageView';
 import portfolioData from './data/portfolio-data.json';
 import './App.css';
 

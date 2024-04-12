@@ -1,6 +1,6 @@
-// import React from 'react';
+export { Selector };
 
-export default function Selector({ images, select, text, initial }) {
+function Selector({ images, select, text, initial }) {
   const groups = new Set(images.map(map => map.group));
   const groupsArr = Array.from(groups);
   return (

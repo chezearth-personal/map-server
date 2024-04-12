@@ -1,6 +1,8 @@
-import Image from './image-view/Image';
+import { Image } from './';
 
-const Home = ({ click, owner }) => {
+export { Home };
+
+function Home({ click, owner }) {
   /** Selects a random imgae from each group for display in the thumbnail */
   const randomPicks = owner.topics.map(topic => {
     return { ...{ name: topic.name }, ...{ random: (Math.floor(Math.random() * (topic.images.length - 1)) + 1) } }
@@ -34,4 +36,4 @@ const Home = ({ click, owner }) => {
   );
 }
 
-export default Home;
+// export default Home;

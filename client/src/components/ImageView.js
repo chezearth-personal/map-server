@@ -1,13 +1,14 @@
-// import { useState } from 'react';
-import Selector from './Selector';
-import Image from './Image';
+import { Selector } from './';
+import { Image } from './';
 
-const ImageView = ({
+export { ImageView };
+
+function ImageView({
   owner,
   topic,
   imageView,
   setImageView
-}) => {
+}) {
   // console.log('topic =', topic);
   const handleSelect = async (e) => {
     // console.log('e.value =', e.value);
@@ -37,4 +38,4 @@ const ImageView = ({
   );
 }
 
-export default ImageView;
+// export default ImageView;
