@@ -9,14 +9,10 @@ function ImageView({
   imageView,
   setImageView
 }) {
-  // console.log('topic =', topic);
   const handleSelect = async (e) => {
-    // console.log('e.value =', e.value);
     const selectedImageView = topic.images.find(image => image.value === e.value);
     setImageView(selectedImageView);
   };
-  // console.log('imageView =', imageView);
-  // console.log('topic =', topic);
   return (
     <div>
         <h1>{`${owner().firstName} ${owner().lastName}'s ${topic.displayName}`}</h1>
@@ -37,5 +33,3 @@ function ImageView({
     </div>
   );
 }
-
-// export default ImageView;

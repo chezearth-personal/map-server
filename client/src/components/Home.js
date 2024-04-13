@@ -35,5 +35,3 @@ function Home({ click, owner }) {
     </div>
   );
 }
-
-// export default Home;

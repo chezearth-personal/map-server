@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { Home, ImageView } from 'components';
-// import ImageView from './components/image-view/ImageView';
 import portfolioData from './data/portfolio-data.json';
 import './App.css';
 
@@ -20,7 +19,6 @@ function App() {
     setImageView(initImage);
     navigate(`/${e.target.id.substring(4)}`);
   }
-  // console.log('App.js: imageView =', imageView);
   return (
     <div className='App'>
       <header>
